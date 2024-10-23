@@ -1,5 +1,12 @@
-let listaUsuarios = [];
-let idGerador = 1;
+let listaUsuarios = [
+    {
+        "nome": "admin",
+        "email": "admin@mail.com",
+        "senha": "12345",
+        "id": 1
+    }
+];
+let idGerador = 2;
 
 function listar() {
     return listaUsuarios.map(usuario => removerCampoSenha(usuario));
